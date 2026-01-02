@@ -1,0 +1,28 @@
+# Menjalankan skrip ETL pipeline
+python main.py
+
+# Menjalankan unit test pada folder tests
+python -m pytest tests
+
+# Menjalankan test coverage pada folder tests
+python -m pytest tests --cov=utils --cov-report=term-missing
+
+# Url Google Sheets:
+https://docs.google.com/spreadsheets/d/1dQ9OnQOWgQa09HX6wQkbgYMmGOTawhfdmtfClfo1aDs/edit?usp=sharing
+
+
+Struktur proyek:
+Membangun ETL Pipeline/
+├── tests/
+│   ├── test_extract.py
+│   ├── test_transform.py
+│   └── test_load.py
+├── utils/
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+├── main.py
+├── requirements.txt
+├── submission.txt
+├── products.csv
+├── google-sheets-api.json
